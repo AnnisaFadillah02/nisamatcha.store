@@ -1,0 +1,179 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #34495e, #2c3e50); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #ecf0f1; 
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ecf0f1;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #bdc3c7;
+}
+
+.login-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #2980b9;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f8f0; /* Warna latar belakang yang lebih lembut */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px; 
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2e7d32; 
+    margin-bottom: 5px;
+}
+
+header p.login-info {
+    color: #777;
+    font-size: 0.9em;
+}
+
+main {
+    padding: 20px 0;
+    text-align: left; 
+}
+
+.additional-content {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.additional-content h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.additional-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.additional-content li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.additional-content li::before {
+    content: "\2022";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.logout-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; 
+}
+
+.logout-button:hover {
+    background-color: #c62828;
+}
+
+footer {
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+    text-align: center; 
+}

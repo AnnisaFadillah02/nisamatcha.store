@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Matcha</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Produk Matcha Kami</h1>
+            <p>Nikmati berbagai pilihan produk matcha berkualitas tinggi.</p>
+        </header>
+        <main class="products-grid">
+            <div class="product-card">
+                <img src="matcha-premium.jpg" alt="Matcha Premium" width="200">
+                <h3>Matcha Premium</h3>
+                <p class="description">Matcha kualitas terbaik untuk upacara teh dan penggunaan sehari-hari.</p>
+                <p class="price">Rp 50.000 / 30g</p>
+                <button class="view-details-button" data-product="premium">Lihat Detail</button>
+            </div>
+
+            <div class="product-card">
+                <img src="matcha-culinary.jpg" alt="Matcha Culinary" width="200">
+                <h3>Matcha Culinary</h3>
+                <p class="description">Cocok untuk membuat latte, kue, dan berbagai hidangan matcha lainnya.</p>
+                <p class="price">Rp 35.000 / 50g</p>
+                <button class="view-details-button" data-product="culinary">Lihat Detail</button>
+            </div>
+
+            <div class="product-card">
+                <img src="chasen.jpg" alt="Chasen (Pengaduk Matcha)" width="200">
+                <h3>Chasen (Pengaduk Matcha)</h3>
+                <p class="description">Pengaduk bambu tradisional untuk menghasilkan matcha yang sempurna.</p>
+                <p class="price">Rp 75.000</p>
+                <button class="view-details-button" data-product="chasen">Lihat Detail</button>
+            </div>
+
+        </main>
+        <footer>
+            <p><a href="home.html">Kembali ke Beranda</a> | <a href="thankyou.html">Selesai</a></p>
+            <p>&copy; 2025 Toko Matcha</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.view-details-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.dataset.product;
+                alert(`Melihat detail produk: ${product}`);
+                window.location.href = 'thankyou.html';
+            });
+        });
+    </script>
+</body>
+</html>

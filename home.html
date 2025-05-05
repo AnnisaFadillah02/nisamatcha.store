@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Informasi Matcha</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="matcha.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="products.html">products</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Selamat Datang, <span id="username"></span></h1>
+            <p class="login-info">Anda berhasil masuk pada <span id="login-time">Waktu Login</span>.</p>
+        </header>
+        <main>
+            <section class="matcha-info">
+                <h2>Apa Itu Matcha?</h2>
+                <p>Matcha adalah teh hijau bubuk halus yang secara tradisional digunakan dalam upacara teh Jepang. Tidak seperti teh biasa yang daunnya diseduh dan kemudian dibuang, dengan matcha, Anda mengonsumsi seluruh daun teh yang telah digiling menjadi bubuk halus.</p>
+                <h3>Manfaat Matcha:</h3>
+                <ul>
+                    <li>Kaya akan antioksidan, yang dapat membantu melindungi sel-sel tubuh dari kerusakan.</li>
+                    <li>Meningkatkan fokus dan kewaspadaan karena kandungan L-theanine yang bekerja sinergis dengan kafein.</li>
+                    <li>Dapat meningkatkan metabolisme dan membantu pembakaran kalori.</li>
+                    <li>Memberikan energi yang lebih stabil dan tahan lama dibandingkan kopi.</li>
+                    <li>Meningkatkan suasana hati dan memberikan efek relaksasi.</li>
+                </ul>
+                <p>Rasanya yang unik, sedikit pahit namun segar dan umami, membuat matcha menjadi bahan populer dalam berbagai minuman dan makanan modern.</p>
+            </section>
+
+            <div class="view-products">
+                <a href="products.html" class="products-button">Lihat Produk Matcha</a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Toko Matcha</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('username').textContent = localStorage.getItem('username') || 'Bestie!';
+        document.getElementById('login-time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
